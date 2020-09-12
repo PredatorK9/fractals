@@ -28,7 +28,7 @@ def draw(x, y):
 
         X, Y = x*scaleX, y*scaleY
         pygame.draw.circle(display, GREEN,
-            [int(WINDOW[0]//2 - 20 + X) , int(WINDOW[1] - Y + c)], 1)
+            [int(WINDOW[0]//2 - 20 + X) , int(WINDOW[1] - Y + c)], 0)
     pygame.display.update()
     return x, y
 
