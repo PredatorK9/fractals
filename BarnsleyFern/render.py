@@ -1,6 +1,8 @@
 import pygame
 import random
-from utils import calculate, original
+from utils import calculate, fern_type
+
+fern = 'original' # type of fern i.e original or barnsley
 
 WINDOW = (500, 600)
 GRAY = (30, 30, 30)
@@ -13,10 +15,20 @@ clock = pygame.time.Clock()
 
 def draw(x, y):
     for _ in range(10):
-        x, y = calculate(x, y, random.random(), original)
-        X, Y = x*99, y*59
+        c=0.0
+        scaleX = 99
+        scaleY = 59
+
+        x, y = calculate(x, y, random.random(), fern_type[fern])
+
+        if fern == 'mutant':
+            c = -80
+            scaleX = 130
+            scaleY = 70
+
+        X, Y = x*scaleX, y*scaleY
         pygame.draw.circle(display, GREEN,
-            [int(WINDOW[0]//2 - 20 + X) , int(WINDOW[1] - Y)], 1)
+            [int(WINDOW[0]//2 - 20 + X) , int(WINDOW[1] - Y + c)], 1)
     pygame.display.update()
     return x, y
 
