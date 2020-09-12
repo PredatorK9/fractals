@@ -2,7 +2,7 @@ import pygame
 import random
 from utils import calculate, fern_type
 
-fern = 'original' # type of fern i.e original or barnsley
+fern = 'original' # type of fern i.e original or mutant
 
 WINDOW = (500, 600)
 GRAY = (30, 30, 30)
