@@ -27,7 +27,7 @@ def draw(complex, shade, scale):
     scaledX = complex[0]*scale
 
     pygame.draw.circle(display,
-        shade, [int(WINDOW[1]//2 + scaledX), int(WINDOW[0]//2 + scaledY)], 0)
+        shade, [int(WINDOW[1]//2 + scaledX), int(WINDOW[0]//2 - scaledY)], 0)
     pygame.display.update()
 
 
