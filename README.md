@@ -1,7 +1,7 @@
 # Fractals
-This is the repository contains the code for visualising the fractals which are never-ending patterns.
+This repository contains the code for visualising the fractals which are never-ending patterns.
 
-The [Chaos Game Video](https://www.youtube.com/watch?v=kbKtFN71Lfs&ab_channel=Numberphile) which got me interested in the whole Chaos theory and fractals.
+The [Chaos Game Video](https://www.youtube.com/watch?v=kbKtFN71Lfs&ab_channel=Numberphile) is one which got me interested in the whole Chaos theory and fractals.
 
 Fractals are infinitely complex patterns that are self-similar across different scales. Driven by recurssion, fractals are images of dynamic systems- the picture of __Chaos__.   
 
